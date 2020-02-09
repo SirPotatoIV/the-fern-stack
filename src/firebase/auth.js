@@ -4,6 +4,8 @@ import { firebase } from "./";
 export const AUTHENTICATING = "AUTHENTICATING";
 export const UserContext = React.createContext(AUTHENTICATING);
 
+// Additional comments added by SirPotatoIV while trying to figure out this code. added initials SP
+// SP - exporting functions that allow for signing into site. Each function is for a different way to login
 export function signInViaGitHubPopUp() {
   const provider = new firebase.auth.GithubAuthProvider();
   firebase
